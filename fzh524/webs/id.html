@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MEMEME</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<style>
+			 .target1 {
+			            
+			            line-height: 48px;
+			            text-align: center;
+			            font-weight: bold;
+			            color: red;
+			            background: burlywood;
+			            transform-origin: bottom;
+			            animation: shaking 1.2s ease-in-out infinite;
+			            /* 初始暂停播放，后续通过js控制播放 */
+			           
+			        }
+			
+			        /* 通过translate3d的x轴移动去控制水平移动抖动效果 */
+			        @keyframes shaking {
+			
+			            10%,
+			            90% {
+			                transform: translate3d(-1.2px, 0, 0);
+			            }
+			
+			            20%,
+			            80% {
+			                transform: translate3d(2px, 0, 0);
+			            }
+			
+			            30%,
+			            70% {
+			                transform: translate3d(-4.8px, 0, 0);
+			            }
+			
+			            40%,
+			            60% {
+			                transform: translate3d(4.8px, 0, 0);
+			            }
+			
+			            50% {
+			                transform: translate3d(-4.8px, 0, 0);
+			            }
+			        }
+					.music {
+					            width: 175px;
+					            height: 100px;
+					            display: flex;
+					        }
+					
+					        .music span {
+					            width: 6px;
+					            border-radius: 18px;
+					            margin-right: 6px;
+					        }
+					
+					        .music span:nth-child(1) {
+					            /* 时间递增，参差不齐的效果 */
+					            animation: bar1 2s 0.2s infinite linear;
+					        }
+					
+					        .music span:nth-child(2) {
+					            animation: bar2 2s 0.4s infinite linear;
+					        }
+					
+					        .music span:nth-child(3) {
+					            animation: bar3 2s 0.6s infinite linear;
+					        }
+					
+					        .music span:nth-child(4) {
+					            animation: bar4 2s 0.8s infinite linear;
+					        }
+					
+					        .music span:nth-child(5) {
+					            animation: bar5 2s 1.0s infinite linear;
+					        }
+					
+					        .music span:nth-child(6) {
+					            animation: bar6 2s 1.2s infinite linear;
+					        }
+					
+					        .music span:nth-child(7) {
+					            animation: bar7 2s 1.4s infinite linear;
+					        }
+					
+					        .music span:nth-child(8) {
+					            animation: bar8 2s 1.6s infinite linear;
+					        }
+					
+					        .music span:nth-child(9) {
+					            animation: bar9 2s 1.8s infinite linear;
+					        }
+					
+					        @keyframes bar1 {
+					            0% {
+					                background: #f677b0;
+					                margin-top: 25%;
+					                height: 10%;
+					            }
+					
+					            50% {
+					                background: #f677b0;
+					                height: 100%;
+					                margin-top: 0%;
+					            }
+					
+					            100% {
+					                background: #f677b0;
+					                height: 10%;
+					                margin-top: 25%;
+					            }
+					        }
+					
+					        @keyframes bar2 {
+					            0% {
+					                background: #df7ff2;
+					                margin-top: 25%;
+					                height: 10%;
+					            }
+					
+					            50% {
+					                background: #df7ff2;
+					                height: 100%;
+					                margin-top: 0%;
+					            }
+					
+					            100% {
+					                background: #df7ff2;
+					                height: 10%;
+					                margin-top: 25%;
+					            }
+					        }
+					
+					        @keyframes bar3 {
+					            0% {
+					                background: #8c7ff2;
+					                margin-top: 25%;
+					                height: 10%;
+					            }
+					
+					            50% {
+					                background: #8c7ff2;
+					                height: 100%;
+					                margin-top: 0%;
+					            }
+					
+					            100% {
+					                background: #8c7ff2;
+					                height: 10%;
+					                margin-top: 25%;
+					            }
+					        }
+					
+					        @keyframes bar4 {
+					            0% {
+					                background: #7fd0f2;
+					                margin-top: 25%;
+					                height: 10%;
+					            }
+					
+					            50% {
+					                background: #7fd0f2;
+					                height: 100%;
+					                margin-top: 0%;
+					            }
+					
+					            100% {
+					                background: #7fd0f2;
+					                height: 10%;
+					                margin-top: 25%;
+					            }
+					        }
+					
+					        @keyframes bar5 {
+					            0% {
+					                background: #7ff2d3;
+					                margin-top: 25%;
+					                height: 10%;
+					            }
+					
+					            50% {
+					                background: #7ff2d3;
+					                height: 100%;
+					                margin-top: 0%;
+					            }
+					
+					            100% {
+					                background: #7ff2d3;
+					                height: 10%;
+					                margin-top: 25%;
+					            }
+					        }
+					
+					        @keyframes bar6 {
+					            0% {
+					                background: #7ff2a0;
+					                margin-top: 25%;
+					                height: 10%;
+					            }
+					
+					            50% {
+					                background: #7ff2a0;
+					                height: 100%;
+					                margin-top: 0%;
+					            }
+					
+					            100% {
+					                background: #7ff2a0;
+					                height: 10%;
+					                margin-top: 25%;
+					            }
+					        }
+					
+					        @keyframes bar7 {
+					            0% {
+					                background: #adf27f;
+					                margin-top: 25%;
+					                height: 10%;
+					            }
+					
+					            50% {
+					                background: #adf27f;
+					                height: 100%;
+					                margin-top: 0%;
+					            }
+					
+					            100% {
+					                background: #adf27f;
+					                height: 10%;
+					                margin-top: 25%;
+					            }
+					        }
+					
+					        @keyframes bar8 {
+					            0% {
+					                background: #e7f27f;
+					                margin-top: 25%;
+					                height: 10%;
+					            }
+					
+					            50% {
+					                background: #e7f27f;
+					                height: 100%;
+					                margin-top: 0%;
+					            }
+					
+					            100% {
+					                background: #e7f27f;
+					                height: 10%;
+					                margin-top: 25%;
+					            }
+					        }
+					
+					        @keyframes bar9 {
+					            0% {
+					                background: #ecaa64;
+					                margin-top: 25%;
+					                height: 10%;
+					            }
+					
+					            50% {
+					                background: #ecaa64;
+					                height: 100%;
+					                margin-top: 0%;
+					            }
+					
+					            100% {
+					                background: #ecaa64;
+					                height: 10%;
+					                margin-top: 25%;
+					            }
+					        }
+							/* 门容器样式 */
+							        .doorWrap {
+							            width: 300px;
+							            height: 320px;
+							            border: 1px solid #666;
+							            perspective: 500px;
+							            position: relative;
+							            display: flex;
+							        }
+							
+							        /* 左门右门的共有样式 */
+							        .leftDoor,
+							        .rightDoor {
+							            width: 50%;
+							            height: 100%;
+							            background-color: rgb(194, 37, 37);
+							            transition: 1.2s;
+							            z-index: 2;
+							            display: flex;
+							            justify-content: center;
+							            align-items: center;
+							            border: 1px solid #333;
+							        }
+							
+							        /* 设置旋转元素的基点，左边大门以左侧为基准点旋转 */
+							        .leftDoor {
+							            transform-origin: left;
+							        }
+							
+							        /* 设置旋转元素的基点，右边大门以右侧为基准点旋转 */
+							        .rightDoor {
+							            transform-origin: right;
+							        }
+							
+							        /* 当鼠标悬浮的时候，设置开门的幅度，左门往左侧开 */
+							        .doorWrap:hover .leftDoor {
+							            transform: rotateY(-130deg);
+							        }
+							
+							        /* 右门往右侧开 */
+							        .doorWrap:hover .rightDoor {
+							            transform: rotateY(130deg);
+							        }
+							
+							        /* 内容区的定位层级稍微低一些 */
+							        .content {
+							            position: absolute;
+							            z-index: 1;
+							            width: 100%;
+							            height: 100%;
+							            background-color: #abf;
+							            display: flex;
+							            justify-content: center;
+							            align-items: center;
+							        }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo" title="点击回到主页">ABOUT ME</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="id.html">my details</a></li>
+							<li =><a href="id2.html">somethint i recommand</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a title="只是一个摆设." class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a title="只是一个摆设." class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a title="真的只是一个摆设." class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a title="都说了只是一个摆设." class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<div class="target1">
+									<header class="major">
+										<h1>THIS IS ME!!!!</h1>
+									</header>
+								</div>
+								
+
+								<!-- Text stuff -->
+									<h2>WHO AM I?</h2>
+									<a href="#" class="image fit"><img src="../images/pic09.jpg" alt="" /></a>
+									<h3>&emsp;&emsp;Someone with some interest.&emsp;&emsp;:)</h3>
+									<hr />
+									<h2>I LIKE......</h2>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul>
+												<li>Playing games!</li>
+												<li>Listening music!</li>
+												<li>Watch movies!</li>
+												<li>And all kinds of funny things!</li>
+											</ul>
+											<div class="music">
+											        <span></span>
+											        <span></span>
+											        <span></span>
+											        <span></span>
+											        <span></span>
+											        <span></span>
+											        <span></span>
+											        <span></span>
+											        <span></span>
+											    </div>
+										</div>
+										 <div class="doorWrap">
+										        <div class="leftDoor">want to</div>
+										        <div class="rightDoor">know more?</div>
+										        <div class="content"><a href="./id2.html">LETS GO!!!!!!!!</a></div>
+										    </div>	
+									
+									<hr />
+
+								
+
+							</section>
+
+					</div>
+
+				
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
