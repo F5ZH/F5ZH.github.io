@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MEMEME</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<style>
+			.dazi {
+			            /* 本例12个文字(加标点符号)；有多少个文字，width就是多少个em */
+			            width: 12em;
+			            /* 加上两个动画，一个是打字动画，使用steps让字一个一个的出现，
+			             注意step和字数保持一致，光标动画也是同理，*/
+			            animation: typingWords 5s steps(12) infinite, cursor 0.5s steps(1) infinite;
+			            /* 要设置不允许换行，且溢出隐藏 */
+			            white-space: nowrap;
+			            overflow: hidden;
+			            /* 使用右边框作为打印的指针光标 */
+			            border-right: 1px solid #000;
+			        }
+			
+			        @keyframes typingWords {
+			            0% {
+			                width: 0;
+			            }
+			        }
+			
+			        @keyframes cursor {
+			            50% {
+			                border-color: transparent;
+			            }
+			        }
+					 .pacMan {
+					            display: inline-block;
+					            position: relative;
+					            margin: 120px;
+					        }
+					
+					        /* 使用伪元素创建吃豆人的眼睛 */
+					        .pacMan::before {
+					            content: '';
+					            width: 0.4em;
+					            height: 0.4em;
+					            border-radius: 50%;
+					            background-color: #333;
+					            position: absolute;
+					            top: 6px;
+					            left: 21px;
+					            z-index: 2000;
+					        }
+					
+					        /* mouth1搭配mouth2组成吃豆人张嘴闭嘴的动画 */
+					        .mouth1 {
+					            width: 0;
+					            height: 0;
+					            border: 25px solid #E1B204;
+					            border-radius: 50%;
+					            border-right-color: transparent;
+					            animation: upup .32s 0s infinite;
+					            position: relative;
+					            z-index: 3;
+					        }
+					
+					        @keyframes upup {
+					            0% {
+					                transform: rotate(270deg);
+					            }
+					
+					            50% {
+					                transform: rotate(1turn);
+					            }
+					
+					            100% {
+					                transform: rotate(270deg);
+					            }
+					        }
+					
+					        .mouth2 {
+					            width: 0;
+					            height: 0;
+					            border: 25px solid #E1B204;
+					            border-right-color: transparent;
+					            border-radius: 25px;
+					            margin-top: -50px;
+					            animation: downdown .32s 0s infinite;
+					            position: relative;
+					            z-index: 3;
+					        }
+					
+					        @keyframes downdown {
+					            0% {
+					                transform: rotate(90deg);
+					            }
+					
+					            50% {
+					                transform: rotate(0);
+					            }
+					
+					            100% {
+					                transform: rotate(90deg);
+					            }
+					        }
+					
+					        /* 豆子不断移动 */
+					        .beanOne {
+					            background-color: #E1B204;
+					            border-radius: 50%;
+					            width: 10px;
+					            height: 10px;
+					            position: absolute;
+					            transform: translateY(-6px);
+					            top: 25px;
+					            left: 100px;
+					            animation: beanAnimation 1s linear .52s infinite;
+					        }
+					
+					        .beanTwo {
+					            background-color: #E1B204;
+					            border-radius: 50%;
+					            width: 10px;
+					            height: 10px;
+					            position: absolute;
+					            transform: translateY(-6px);
+					            top: 25px;
+					            left: 100px;
+					            animation: beanAnimation 1s linear 1.1s infinite;
+					        }
+					
+					
+					        @keyframes beanAnimation {
+					            75% {
+					                opacity: .72;
+					            }
+					
+					            100% {
+					                transform: translate(-100px, -6px);
+					            }
+					        }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo" title="点击回到主页">ABOUT ME</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li ><a href="id.html">my details</a></li>
+							<li class="active"><a href="id2.html">somethint i recommand</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a title="只是一个摆设." class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a title="只是一个摆设." class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a title="真的只是一个摆设." class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a title="都说了只是一个摆设." class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<div class="target1">
+									<header class="major">
+										<h1>CONTINUE</h1>
+									</header>
+								</div>
+								
+
+								<!-- Text stuff -->
+									<h2 class="dazi">推荐文章</h2>
+									
+									<h3>作者：南窗文化生活
+									<br>
+<a href="https://zhuanlan.zhihu.com/p/86603527">来源：知乎</a>
+<br>
+<br>
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+<br>
+<p>
+	&emsp;&emsp;2000年在北京，一个叫无名高地的酒吧，也是个演出据点。那天演出正要开始，
+	<br />&emsp;&emsp;场地负责人说：“我这儿有一帮兄弟从东北过来，大老远来北京演出，能不能让他们在主场乐队演出前上台演两首？就两首！ ”
+	<br />&emsp;&emsp;OK啊，那就演呗。然后这帮哥们就上去了，两首歌演了40多分钟。
+	<br />&emsp;&emsp;以上是一个流传于网络的玩笑段子。谁能想到在20年后，这支并不处在中国摇滚乐核心城市北京的大连乐队，居然一直用他们的作品，带领器乐摇滚音乐一直深深的扎根在听众的心中。他们低调却极富力量地一直摇着中国器乐摇滚的旗帜，并将这面旗帜扎根在全世界器乐摇滚乐迷的心中。 当更多乐队在通过综艺节目往更为大众化的听众方向拓展之时，
+	惘闻却思考一条另外的道路，将听众拓展到地域上更宽广的地方，且已经持续了十年。
+</p>
+<p>
+	&emsp;&emsp;他们在今年伴随着扎扎实实的第10张高品质专辑完成了第5次欧洲巡回演出。
+	在冰岛国宝级乐队Sigur Rós的录音室里制作新专，与被奉为世界四大后摇团的MONO在居酒屋里干杯。
+	瑞典友团Pg.lost的两位吉他手作为“兼职司机”陪伴惘闻欧洲巡演。用音乐和全世界更多地区的听众、
+	音乐人交朋友,享受“音乐人”这个身份并从中不断学习汲取，看见世界。借惘闻乐队的话说：“趁能干的时候，别废话，抓紧干。”
+	<br />&emsp;&emsp;我问一个听过百场后摇演出的朋友：“惘闻在你们乐迷眼里算什么地位？”
+	<br />&emsp;&emsp;“别问，问了就是蠢，惘闻是最好的摇滚乐队。”
+	
+</p>
+<p>
+	<b>01.</b>
+	<br />&emsp;&emsp;1998年，和那个时代绝大多数喜欢摇滚乐的年轻一代一样：“想有一支自己乐队的这种骄傲和虚荣心占据了一切”，
+	谢玉岗和常来找他喝酒的高中生徐增铮开始组乐队。《
+	灿烂涅槃》里提到的乐队是他们淘打口带的目录指南。
+	<br />&emsp;&emsp;1999年，第一任鼓手赵丹提出“置若罔闻”——没有人知道，也不在意外界的看法，这个概念，作为乐队的名字，大家觉得不错。一次演出谢玉岗误将“罔闻”写成“惘闻”，发现错误后，他觉得有“心”也挺好。 2000年谢玉岗从大连理工大学的工商管理及英语系毕业，去了造船厂负责大型货运船舶的国际销售，惘闻就剩下他和弹贝斯的铮子，他们一度将乐队名改为“回家路上的两个桥墩”。乐队后来的吉他手耿鑫此时正在物流公司上班，键盘手张岩峰正在音乐学院做音乐老师，鼓手连江还在教小朋友们学打鼓。 2002年在录制惘闻第一张专辑当时，谢玉岗坐在马桶上写下了《垂死的岁末》的歌词：“上班的时候我会想，我的同事还有意义吗，我的科长还有意义吗……”歌词里的科长后来当上了船厂的副经理。
+	科长待他不错，也因为日常工作处理的得当，外出演出请假科长都予以批准。这一年的惘闻发布了首张正式专辑《二十八天失眠日记》。
+</p>
+<p>
+	<br />&emsp;&emsp;这一年，乐队认识了一位人在大连的加拿大吉他手海风。在大连这座城市，喜欢摇滚乐的人不多，那个年代没有互联网，
+	大家交换音乐的方式也极其简单，基本靠互相推荐和互赠刻录光碟。
+	<br />&emsp;&emsp;海风总去看惘闻排练，送给谢玉岗很多CD，其中就有 GodspeedYou !BlackEmperor，Mogwai, Do Make Say Think这些乐队。这些“不太一样”的摇滚乐一下子就把谢玉岗迷住了，仿佛进入了另外的一个音乐世界，让他意识到：“原来一个摇滚乐队可以没有唱的，原来乐器本身都可以作为一个乐队的主导，平衡地发挥不同的音色魅力”。惘闻开始找到了一条不太一样的创作新方向。2003年夏天，惘闻在大连准备录制新专辑，录制过程中因为硬盘烧毁，最后仅两首作品幸存下来。在那个条件极其有限的年代，再次录制一遍几乎成为奢望，谢玉岗说：“这件事对我们打击挺大的，当时‘消失’的那些歌，我们都没再排练过，以后也没有再演的计划了。”那一年，大连的摇滚乐场景有了新的诉求：谢玉岗和几个朋友合伙开了大连第一家给乐队演出的场地，名为Rock Action Club，位于老火车站旁的
+	地下室。
+	谢玉岗和朋友们买来砖头水泥和沙子自己堆舞台。因为没钱买水泥，一演出尘土飞扬。开业第一天，大连8支乐队，集体到场，演出收益全部捐给场地。
+</p>
+<p>
+	<br />&emsp;&emsp;在那个年代，RA成为了一代喜欢摇滚乐年轻人的回忆之地。2006年，因为无法续租，Rock Action Club搬去一家名为白玉兰的老式歌舞厅，半年后，因不可抗力停业。 随后，惘闻一口气发了两张专辑，以及一款价值200块的限量版“盒子”，那个年代，对于乐队的限量周边，可能会觉得这个价格有点不值。因为很少人知道硬盘烧毁后幸存的两首，连同后来几首没有收进专辑的音乐一起封进了这个无价的盒子里。 
+	2008年惘闻推出第五张专辑《IV》。这年里，惘闻第一次受邀去国外演出，从丹麦到英国。
+</p>
+<p>
+	<br />&emsp;&emsp;惘闻开始意识到可以用他们的音乐打开更广阔的链接，开始关注同样来自亚洲的器乐摇滚乐队MONO。他们在过去的8年中，用不断巡演和推出新作品的方式，将音乐拓展到了更为广阔的听者耳中。2017年，已经是世界级的器乐摇滚天团MONO联合日本另外两支极具代表性的乐队，在东京共同组织了一场名为After Hours的音乐节。他们希望“重拾与日本地下音乐的联系，让‘高手’对话‘高手’，与那些摧毁艺术的事物保持对抗”。惘闻作为唯一一直海外受邀的乐队参与其中，也真正进入到日本的音乐场景当中，与他们共同对话。MONO和惘闻，这两支同年生的乐队一直惺惺相惜，在东京再次产生美好的碰撞。
+</p>
+<p>
+	<br />&emsp;&emsp; 惘闻演了《21世纪不适症》、《第八层地狱》及《少年宫》，当谢玉岗唱起：“过去没有，现在不是，我确信，没分别”，无论听多少次都还是一样震撼。惘闻创作最初时的那份赤诚，随着作品一直保存至今，并在每次演出时被重新温习。演出结束后，MONO的taka特意去后台找到惘闻说：“等演出结束后会有一个内部聚会，请你们务必留下来，待会儿我们一起聚一下。”taka说：“我感觉，可以自由做音乐的时代已经到了。我们思考能不能不借助主流唱片公司的支持，就凭我们自己，能做点什么？”“所以我们把大家召集在一起，互相支持。” ENVY的河和信贤说：“亚洲的力量非常强大，我们虽然受了欧美影响，才开始有了乐队，但我们尊重这些影响的同时，新的力量在亚洲正在生产，因此我们不希望错过这个时机。国家虽然不同，但因为音乐大家连在一起，纯粹地享受快乐，产生更新的东西，还有比这个更棒的吗？”通过这次深入的交流谢玉岗分享道：在中国做乐队，目前大家整体的演出条件和经济条件和这些日本乐队相比都不错了，但大家的专注度、投入度跟日本乐队比起来有很大差距。“大家可以更关注、更投入在音乐本身之上，我们跟他们没有区别，都一样喜欢着音乐。别人可以同样工作，但他会投入更多在音乐上，那么我们为什么不能投入更多呢？中国音乐人都可以给自己打一个反问号。”
+
+</p>
+<p>
+	<b>02.</b>
+	<br />&emsp;&emsp;步入中年的惘闻，似乎从来都么有纠结过“做音乐要坚持”或者“音乐能养活我吗”这样的问题。因为对于惘闻而言，做自己喜欢的事情并且还可以从中学习到新的知识，是快乐的事情，何谈坚持？只要觉得依然快乐、喜欢、还可以学到新内容，就会继续做；反之，随时可以停止，没有坚持的必要。 这个状态，让他们不必迎合，他们只需要了解，自己喜欢什么，好音乐是什么，自己还能从音乐中学到什么。2014年惘闻的第八张专辑《八匹马》在大连回声图书馆录制，也是他们第一次尝试在非录音室环境中录制专辑。
+</p>
+<p>
+	<br />&emsp;&emsp;这张专辑被beehype评为BestAlbums of 2014 Top 2（2014年度最佳唱片亚军）；arcticdrones 打出8分的高评价；专辑单曲《Welcome to Utopia》获 Outstanding Songs of2014 that You Might Have Missed（2014年度最不该错过的优质音乐）。 这一年惘闻开始尝试更多的发声方式，当人们一直在好奇惘闻标志性的“螺丝刀”或者是也使用过的“小电风扇”、“电动牙刷”之时，对于惘闻而言，这些都只是制造出他们需要表现的音色的工具而已。2015年惘闻《八匹马》中加入小号/巴立东成员黄凯，继续扎实地推进着海外巡演，并受邀参加欧洲最大最专业的后摇音乐节 Dunk!Festival 。看过他们的演出后，国外最有影响力的独立音乐杂志ArcticDrones主笔评价惘闻的演出是史诗级的，足以让其他乐队黯然失色。 2016惘闻推新专辑《岁月鸿沟》，封面是密集排列着上百个穿校服的少年，都是我们在岁月里曾有过的面孔。
+
+</p>
+<p>
+	<br />&emsp;&emsp;这是一张更为凝重、分量感极强的专辑，惘闻的音乐开始往更深邃和内容极其厚重的方向发展。
+
+对于惘闻音乐内核中的表达，早已不是能够制造出旋律优美、情绪推进那么简单了。
+
+2018年惘闻前往冰岛，在SigurRós的工作室录制新专辑《看不见的城市》。
+</p>
+<p>
+	<br />&emsp;&emsp;吸引惘闻选择这座录音室的主要原因，是这里收藏的独特的乐器设备，能够帮助乐队在录音室内进行二度创作。通过纪录片我们也可以完整看到，惘闻把录音室里能出声的东西：从几十架难得一见的收藏级风琴，到犄角旮旯里面的所有发声物，全翻了个遍，在音色上作出了前所未有的探索。 “我特别讨厌现在给予后摇的那种铺垫、爆发、爆发、爆发的模式。世界各地都在这样，听众对这种感觉乐此不疲。现在听后摇的青年们的那种自怜自艾的状态我特别抗不了，你不要觉得音乐是你的庇护所，音乐就是音乐，你的生活就是你的生活，没有任何关系。”惘闻新专《看不见的城市》里有首歌叫《水之湄》，名字来源于乐队在冰岛录音时发现冰天雪地的录音室外，有一条涓涓流淌的溪流，即使大雪皑皑冰冻一切，小溪也未结冰，不断流淌。溪流给了乐队命名的灵感，而生命正如溪流，尽管大环境并不尽如人意，但会有一股看不看的力量：唯有自身不断努力，时刻保持运动，清醒看待周遭才能将生命力延续下去。
+
+</p>
+________________________________________________________________
+ <br />内容参考：惘闻豆瓣小站、
+ <br />微博MONO豆瓣小站MONO官方网站
+ <br />《惘闻吉他手谢玉岗为专辑排序》NOISEY朱明康撰
+ <br />《专访｜惘闻乐队：划分时代的并不是时间，而是人类自己》澎湃新闻 钱恋水撰
+ <br />《惘闻吉他手谢玉岗：凭自己的听觉去判断取舍》Fender专访《惘闻乐队：沉默造梦者》落网 秦何人撰
+ <br />✒️作者：魏森垚 & Space Circle</h3>
+									<hr />
+									<h2>That's all,thanks for reading!</h2>
+									<div class="pacMan">
+									        <div class="eye"></div>
+									        <div class="mouth1"></div>
+									        <div class="mouth2"></div>
+									        <div class="beanOne"></div>
+									        <div class="beanTwo"></div>
+									    </div>
+									<hr />																
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<h2>CONTACT ME!</h2>
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" title="装饰用" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt" title="只是因为好看才放上去的模板">
+								<h3>Address</h3>
+								<p>xxxxxx<br />
+								xxxxxxxx</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#" title="you can't find me :)">xxxx-xxxx-xxx</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#" title="you can't find me XD">xxxxxxxx@xxxx.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
